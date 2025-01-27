@@ -1,39 +1,34 @@
-import Image from "next/image";
+import ComparisonGraph from "@/components/ComparisonGraph";
+import QuestionAnalysis from "@/components/QuestionAnalysis";
+import QuickStat from "@/components/QuickStat";
+import SkillTest from "@/components/SkillTest";
+
 
 const skilltest = () => {
   return (
     <div className="">
       <h3 className="py-4 shadow">Skill Test</h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* //////////////////// */}
 
         {/* Skill Test */}
         <div className="">
           {/* Skill Test header */}
-          <div className="flex justify-between items-center shadow py-4">
-            <div className="flex items-center">
-              <Image src="/html.png" alt="html" width={50} height={50} />
-            </div>
-            <div className="flex flex-col items-center">
-              <h2>Hyper Test Markup Language</h2>
-              <p>Question: 08 | Duration: 15 mins | Submitted on 5 June 2021</p>
-            </div>
-            <div className="flex items-center">
-              <button className="bg-blue-900 rounded">Update</button>
-            </div>
+          <div>
+            <SkillTest />
           </div>
+
           {/* Quick Statistic */}
           <div>
-            <h2>Qucik Stat</h2>
+            <QuickStat />
           </div>
+
           {/* Comparison Graph */}
           <div>
-            <h2>Graph</h2>
+            <ComparisonGraph />
           </div>
         </div>
-
-        {/* //////////////////////////////// */}
 
         {/* Syllabus Wise & Question Analysis */}
         <div>
@@ -43,7 +38,7 @@ const skilltest = () => {
           </div>
           {/* Question Analysis */}
           <div>
-            <h2>Question Analysis</h2>
+            <QuestionAnalysis />
           </div>
         </div>
       </div>
