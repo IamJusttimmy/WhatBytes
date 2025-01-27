@@ -2,7 +2,7 @@ import ComparisonGraph from "@/components/ComparisonGraph";
 import QuestionAnalysis from "@/components/QuestionAnalysis";
 import QuickStat from "@/components/QuickStat";
 import SkillTest from "@/components/SkillTest";
-
+import SyllabusAnalysis from "@/components/SyllabusAnalysis";
 
 const skilltest = () => {
   return (
@@ -34,7 +34,7 @@ const skilltest = () => {
         <div>
           {/* Syllabus Wise Analysis */}
           <div>
-            <h2>Syllabus Wise Analysis</h2>
+            <SyllabusAnalysis />
           </div>
           {/* Question Analysis */}
           <div>

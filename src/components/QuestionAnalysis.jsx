@@ -70,7 +70,9 @@ const QuestionAnalysis = () => {
                           x={viewBox.cx}
                           y={viewBox.cy}
                           className="fill-foreground text-3xl font-bold"
-                        ></tspan>
+                        >
+                          🎯
+                        </tspan>
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
