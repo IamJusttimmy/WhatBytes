@@ -28,8 +28,8 @@ export default function RootLayout({ children }) {
       >
         <Header />
 
-        <div className="flex-1 grid grid-cols-[240px_1fr] overflow-y-hidden">
-          <Navbar />
+        <div className="flex-1 sm:grid sm:grid-cols-[100px_1fr] md:grid-cols-[240px_1fr] overflow-y-hidden">
+          <Navbar className={`sm:w-0`} />
 
           <div className="overflow-y-scroll">{children}</div>
         </div>

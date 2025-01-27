@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className={`p-6 shadow`}>
+    <div className="p-6 shadow hidden md:block lg:block">
       {/* Navigation link */}
       <nav className="flex flex-col space-y-6">
         <Link

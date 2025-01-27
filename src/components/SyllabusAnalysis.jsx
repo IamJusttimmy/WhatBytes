@@ -14,15 +14,16 @@ const SyllabusAnalysis = () => {
       <h2>Syllabus Wise Ananlysis</h2>
       {tests.map((test, index) => (
         <div key={index} className="space-y-2">
-          <div>{test.Label}</div>
-          <span>
-            <div className="pt-2 mt-4 w-80 bg-gray-200 rounded-full h-3 relative"></div>
-            <div
-              className={`h-3 rounded-full  ${test.color}`}
-              style={{ width: `${test.percentage}%` }}
-            ></div>
-          </span>
-          <span className="">{test.percentage}%</span>
+          <div className="mt-2">{test.Label}</div>
+          <div className="flex gap-4 w-fit">
+            <div className="pt-2 mt-2 w-80 bg-gray-200 rounded-full h-3 relative">
+              <div
+                className={`h-3 rounded-full absolute z-40 top-0 left-0`}
+                style={{ width: `${test.percentage}%`, background: test.color }}
+              ></div>
+            </div>
+            <p className="">{test.percentage}%</p>
+          </div>
         </div>
       ))}
     </div>

@@ -9,7 +9,7 @@ const skilltest = () => {
     <div className="">
       <h3 className="py-4 shadow">Skill Test</h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {/* //////////////////// */}
 
         {/* Skill Test */}
